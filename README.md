@@ -3,6 +3,10 @@
 Quiz App is an Android Application that asks the user questions based on "How I met Your Mother" TV show.
 
  No copyright intended.
+ 
+ 
+ <img src='https://github.com/sgm28/Quiz/blob/master/gif/QuizApp.gif' title='Quiz app walkthrough' width=300 alt='Quiz App walkthrough' />
+ 
 
 This was a project given to me to complete by Udacity's Android Basic Nanodegree program.
 

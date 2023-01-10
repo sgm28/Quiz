@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- The image is from the following website
+    https://it.wikipedia.org/wiki/File:How_I_Met_Your_Mother_-_Titoli_di_testa.png -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src= "@drawable/how_i_met_your_mother_titoli_di_testa"/>
+
+    <!-- Name field -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name: " />
+
+        <EditText
+            android:id ="@+id/userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="John Doe/ Jane Doe"/>
+
+    </LinearLayout>
+
+    <!-- Date filed -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Date: "
+        />
+
+
+
+    <EditText
+        android:id ="@+id/userDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:hint="6/19/2018"/>
+    </LinearLayout>
+
+
+
+
+
+<!--Title section -->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="Good Luck"
+        />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="How I Met Your Mother Quiz"/>
+
+
+
+    <!-- Question section -->
+
+    <!-- Question 1  -->
+    <TextView
+
+        style="@style/QuestionStyles"
+        android:text="1.) What is Ted middle name?"/>
+
+
+        <EditText
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:hint= "Jane"
+            android:padding= "8dp"/>
+
+    <!-- Question 2  -->
+    <TextView
+
+        style="@style/QuestionStyles"
+        android:text="2.) What is Stella allegric too?"/>
+
+
+    <EditText
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:hint= "Chocolate"
+        android:padding="8dp"/>
+
+    <!-- Question 3  -->
+    <TextView
+
+        style="@style/QuestionStyles"
+        android:text="3.) What is Barney Occupation?"
+
+        />
+
+
+    <EditText
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:hint= "Computer programmer"
+        android:padding="8dp"/>
+
+    <!-- Question 4  -->
+    <TextView
+
+        style="@style/QuestionStyles"
+        android:text="4.) How many dogs does Robbin Have?"
+
+        />
+
+
+    <EditText
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:hint= "Six"
+        android:padding="8dp"/>
+
+    <!-- Question 5  -->
+    <TextView
+
+        style="@style/QuestionStyles"
+        android:text="5.) Select the men Robin has dated."
+
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox_barney5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:text="Barney"
+        />
+
+    <CheckBox android:id="@+id/checkbox_ted5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:text="Ted"/>
+
+    <CheckBox android:id="@+id/checkbox_nick5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:text="Nick"/>
+
+    <CheckBox android:id="@+id/checkbox_don5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:text="Don"/>
+
+    <!-- Question 6  -->
+    <TextView
+
+        android:id = "@+id/question6RadioGroup"
+        style="@style/QuestionStyles"
+        android:text="6.) Is Barney Marshall co-best man?"/>
+
+
+    <RadioGroup
+        android:id="@+id/answer6_Radio_Group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+       >
+
+        <RadioButton android:id="@+id/answer6_Yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="yes"
+           />
+
+        <RadioButton android:id="@+id/answer6_No"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="No"
+            />
+    </RadioGroup>
+
+    <!-- Question 7  -->
+    <TextView
+
+        style="@style/QuestionStyles"
+        android:text="7.) Who is the owner of the yellow umbrella?"
+
+        />
+
+
+    <EditText
+        android:id="@+id/answer7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:hint= "Ted Mosby"
+        android:padding="8dp"/>
+
+    <!-- Question 8  -->
+    <TextView
+
+        style="@style/QuestionStyles"
+        android:text="8.) Who did Robin marry first?"/>
+
+
+    <RadioGroup
+        android:id = "@+id/answer8_Radio_Group"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/answer8Ted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Ted"
+          />
+
+        <RadioButton android:id="@+id/answer8Barney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Barney"/>
+
+    </RadioGroup>
+
+    <!-- Question 9  -->
+
+   <TextView
+
+    style="@style/QuestionStyles"
+       android:text="9.) Select the women Barney has dated."
+
+    />
+
+    <CheckBox
+        android:id="@+id/checkbox_quin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:text="Quin"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox_robin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:text="Robin"/>
+
+    <CheckBox android:id="@+id/checkbox_shannon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:text="Shannon"/>
+
+    <CheckBox android:id="@+id/checkbox_nora"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:text = "Nora"/>
+
+    <!-- Question 10  -->
+
+    <TextView
+
+        style="@style/QuestionStyles"
+
+
+        android:text="10.) What university did Lilly attend?"
+
+        />
+
+
+    <EditText
+        android:id="@+id/answer10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:hint= "Harvard"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2"
+        android:onClick="gradeQuiz"
+        android:text ="Submit"/>
+
+    <!--Footer -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="No copyright infringement intended"
+
+        />
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+
+

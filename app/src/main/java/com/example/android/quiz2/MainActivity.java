@@ -168,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
             message += "First question is wrong.\n";
+            message +="Answer is: Evelyn\n";
 
         }
 
@@ -191,6 +192,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
             message += "Second question is wrong.\n";
+            message +="Answer is: Peanuts\n";
         }
 
 
@@ -219,6 +221,11 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
             message += "Third question is wrong.\n";
+            message +="Answer is: Please or Provide Legal Exculpation And Sign Everything\n";
+
+
+
+
         }
 
 
@@ -239,6 +246,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
             message += "Fourth question is wrong.\n";
+            message +="Answer is: Five\n";
         }
 
     }
@@ -303,6 +311,9 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             message += "Fifth question is wrong.\n";
+            message +="Answer is: Barney\n" +
+                    "Ted\n" +
+                    "Nick\n";
 
         }
 
@@ -339,6 +350,7 @@ public class MainActivity extends AppCompatActivity {
 
             //The other radio button with the ID answer6_No must have been selected.
             message += "Sixth question is wrong.\n";
+            message +="Answer is: Yes\n";
             return;
 
         }
@@ -364,6 +376,7 @@ public class MainActivity extends AppCompatActivity {
             Log.i("grade from question 7", String.valueOf(grade));
         } else {
             message += "Seventh question is wrong.\n";
+            message +="Answer is: Tracy McConnell\n";
             Log.i("grade from question 7", String.valueOf(grade));
         }
 
@@ -389,6 +402,7 @@ public class MainActivity extends AppCompatActivity {
         } else if ("Ted".equals(selectedRadioButton.getText())) {
 
             message += "Eight question is wrong" + "\n";
+            message +="Answer is: Barney\n";
             return;
 
 
@@ -465,6 +479,13 @@ public class MainActivity extends AppCompatActivity {
             Log.i("grade from question9", String.valueOf(grade));
 
         }
+        else
+        {
+            message +="Answer is: Quinn\n" +
+                    "Robin\n" +
+                    "Shannon\n" +
+                    "Nora\n";
+        }
 
     }
 
@@ -486,6 +507,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
             message += "Tenth question is wrong.\n";
+            message +="Answer is: Wesleyan University\n";
         }
 
 
